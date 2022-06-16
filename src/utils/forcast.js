@@ -50,7 +50,7 @@ const forecast = (latitude, longtitude, callback) => {
             // }
 
 
-            callback(undefined, body.currently.summary + ' It is currently ' + body.currently.temperature + ' degress out. There is a ' + body.currently.precipProbability + ' % chance of rain.')
+            callback(undefined, body.currently.summary + ' It is currently ' + body.currently.temperature + ' degress out. There is a ' + body.currently.precipProbability + ' % chance of rain. And Todays Humidity is'+ body.currently.humidity)
         }
     })
 }
