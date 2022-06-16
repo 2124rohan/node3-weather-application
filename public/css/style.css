@@ -1,0 +1,51 @@
+body{
+    color: rgb(43, 41, 41);
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 650px;
+    margin:  0 auto;
+    padding: 0 17px;
+    display: flex;
+    flex-direction: column;
+
+    min-height:100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+footer{
+    color: rgb(91, 106, 119);
+    border-top: 1px  rgb(27, 27, 27) solid;
+}
+header{
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+header a{
+    color: rgb(78, 71, 71);
+    margin-right: 17px;
+    text-decoration:none;
+}
+
+.me{
+    width: 250px;
+    margin-bottom: 20px;
+}
+input{
+    border:  1px rgb(41, 40, 40) solid;
+    padding: 8px;
+}
+button{
+    cursor: pointer;
+    border: 1px rgb(41, 40, 40) solid;
+    background-color: rgb(34, 28, 28);
+    color: white;
+    padding: 8px;
+}
