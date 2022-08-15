@@ -65,6 +65,20 @@ app.get('/weather',(req,res)=>{
 	  })
 })
 
+app.get('/forcast', (req,res)=>{
+	const latitude = req.query.latitude
+	const longitude = req.query.longitude
+	console.log(latitude,longitude)
+	forecast(latitude,longitude, (error,forcastData)=>{
+		if(error){
+			return res.send(error)
+		}
+		res.send({
+			Forcast:forcastData
+		})
+	})
+})
+
 app.get('/products',(req,res)=>{
 	if(!req.query.search){
 		return res.send({
